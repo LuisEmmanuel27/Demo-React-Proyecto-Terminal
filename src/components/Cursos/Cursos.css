@@ -1,0 +1,190 @@
+.cursos {
+  position: relative;
+  background-image: url("../../assets/stars.png");
+  padding-top: 2rem;
+  overflow: hidden;
+  min-height: 150vh;
+}
+
+.space-back > :nth-child(1) {
+  position: absolute;
+  width: 200px;
+  bottom: 10%;
+  right: 10%;
+}
+
+.space-back > :nth-child(2) {
+  position: absolute;
+  width: 500px;
+  top: 15%;
+  left: 0;
+}
+.space-back > :nth-child(3) {
+  position: absolute;
+  width: 500px;
+  top: 20%;
+  right: 10%;
+  z-index: 1;
+}
+
+.space-back > :nth-child(4) {
+  position: absolute;
+  width: 600px;
+  top: 55%;
+  left: 5%;
+}
+
+.space-back > :nth-child(5) {
+  position: absolute;
+  width: 500px;
+  right: -30%;
+  animation: mov 5s infinite linear;
+  transform: rotate(-10deg);
+}
+
+@keyframes mov {
+  0% {
+    top: 0;
+    right: -30%;
+  }
+
+  50% {
+    top: 45%;
+    right: 50%;
+  }
+
+  100% {
+    top: 70%;
+    right: 100%;
+  }
+}
+
+.space-back > :nth-child(6) {
+  position: absolute;
+  width: 200px;
+  right: -10%;
+  z-index: 11;
+  animation: mov2 5s infinite linear;
+}
+
+@keyframes mov2 {
+  0% {
+    bottom: 10%;
+    right: -10%;
+  }
+
+  50% {
+    bottom: 45%;
+    right: 50%;
+  }
+
+  100% {
+    bottom: 70%;
+    right: 100%;
+  }
+}
+
+.cursos-cont {
+  position: relative;
+  z-index: 15;
+  margin: 0.5rem auto 2rem auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cursos-cont .curso-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cursos-cont .curso-item picture {
+  background-image: linear-gradient(
+    to left top,
+    #7a337da4,
+    #702c73a4,
+    #65256aa4,
+    #5a1e60a4,
+    #501757a4,
+    #491351a4,
+    #410f4ca4,
+    #3a0b46a4,
+    #330a42a4,
+    #2d083ea4,
+    #270739a4,
+    #210535a4
+  );
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.cursos-cont .curso-item picture img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cursos-cont .curso-item .content {
+  max-width: 50%;
+  background-image: linear-gradient(
+    to left top,
+    #7a337da4,
+    #702c73a4,
+    #65256aa4,
+    #5a1e60a4,
+    #501757a4,
+    #491351a4,
+    #410f4ca4,
+    #3a0b46a4,
+    #330a42a4,
+    #2d083ea4,
+    #270739a4,
+    #210535a4
+  );
+  backdrop-filter: blur(3px);
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+  color: var(--blanco-main);
+  overflow: visible;
+}
+
+.cursos-cont .curso-item .content::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #3a0b46a4;
+  backdrop-filter: blur(3px);
+  top: 50%;
+  left: -10px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-90deg);
+}
+
+.cursos-cont .curso-item .content > :nth-child(1) {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cursos-cont .curso-item .content .info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.cursos-cont .curso-item .content .info > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cursos-cont .curso-item .content .info img {
+  width: 80px;
+}

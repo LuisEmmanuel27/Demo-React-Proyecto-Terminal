@@ -1,0 +1,100 @@
+.conocenos {
+  background-image: url("../../assets/stars.png");
+}
+
+.info-web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.info-web picture {
+  flex: 1 1 40px;
+}
+
+.info-web picture img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.info-web .contenido {
+  flex: 1 1 40px;
+}
+
+.info-web .contenido h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info-web .contenido p {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.social-media {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.social-media h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.social-media .ico-container i {
+  font-size: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.social-media .ico-container i:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    #98bae7,
+    #89ace4,
+    #7e9de1,
+    #768edc,
+    #727ed6,
+    #7073d2,
+    #6f69cd,
+    #705dc8,
+    #6f55c5,
+    #6e4dc3,
+    #6e45bf,
+    #6e3cbc
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: tambaleo 2s linear;
+}
+
+@keyframes tambaleo {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  20% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}

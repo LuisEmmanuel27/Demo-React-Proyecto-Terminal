@@ -1,0 +1,83 @@
+@import url("http://fonts.cdnfonts.com/css/malvinas");
+@import url("http://fonts.cdnfonts.com/css/letter-sketch");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  font-family: "Malvinas Regular", sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+:root {
+  --morado-main: #8759c8;
+  --morado-main-2: #8759c8b6;
+  --morado-dark: #2f136d;
+  --negro: #333;
+  --blanco-main: rgb(197, 197, 197);
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--morado-main);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--morado-dark);
+  border-radius: 10px;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #9264d2,
+    #8759c8,
+    #7c4fbd,
+    #7244b3,
+    #673aa9,
+    #5f33a0,
+    #562d98,
+    #4e268f,
+    #462186,
+    #3e1c7e,
+    #371875,
+    #2f136d
+  );
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn:hover {
+  background-color: var(--negro);
+  color: white;
+}
+
+.title {
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+.title span {
+  font-family: "Letter Sketch", sans-serif;
+}

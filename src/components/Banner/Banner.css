@@ -1,0 +1,120 @@
+@import url("http://fonts.cdnfonts.com/css/letter-sketch");
+
+.banner {
+  position: relative;
+  background-image: url("../../assets/spaceBack.jpg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner .divisor {
+  clip-path: polygon(0 0, 70% 0, 40% 100%, 0% 100%);
+  background-image: linear-gradient(
+    to right top,
+    #9264d2,
+    #8759c8,
+    #7c4fbd,
+    #7244b3,
+    #673aa9,
+    #5f33a0,
+    #562d98,
+    #4e268f,
+    #462186,
+    #3e1c7e,
+    #371875,
+    #2f136d
+  );
+  height: 100%;
+  overflow: hidden;
+}
+
+.banner .content .left-b {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 1rem;
+}
+
+.banner .content .left-b > :nth-child(1) {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.banner .content .left-b > :nth-child(2) {
+  font-size: 6rem;
+  font-family: "Letter Sketch", sans-serif;
+}
+
+.banner .content .left-b > :nth-child(3) {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.banner .content .left-b .btn-ban {
+  position: relative;
+  margin-top: 1.2rem;
+  width: 30%;
+  overflow-x: hidden;
+}
+
+.banner .content .left-b .btn-ban i {
+  position: absolute;
+  left: -15px;
+}
+
+.banner .content .left-b .btn-ban:hover i {
+  left: 15px;
+}
+
+.banner .content .right-b > :nth-child(1) {
+  width: 300px;
+  position: absolute;
+  top: 400px;
+  right: 350px;
+  animation: tambaleo 5s infinite;
+}
+
+.banner .content .right-b > :nth-child(2) {
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  transform: rotate(20deg);
+  animation: tambaleo 5s infinite;
+}
+.banner .content .right-b > :nth-child(3) {
+  width: 250px;
+  position: absolute;
+  top: 480px;
+  right: 50px;
+  transform: rotate(-20deg);
+  animation: tambaleo 5s infinite;
+}
+
+@keyframes tambaleo {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}

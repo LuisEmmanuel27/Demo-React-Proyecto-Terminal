@@ -1,0 +1,104 @@
+.mascotas {
+  background-image: url("../../assets/stars.png");
+}
+
+.cards-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.cards-Container .card {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+
+.cards-Container .card::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  width: 820px;
+  height: 300px;
+  background-image: linear-gradient(
+    to left,
+    #cd4dcc,
+    #c540d2,
+    #ba33d9,
+    #ad26e1,
+    #9c19e9,
+    #8d13e3,
+    #7e0ddd,
+    #6e07d7,
+    #6204c1,
+    #5702ab,
+    #4b0196,
+    #400082
+  );
+  z-index: -1;
+  border-radius: 10rem;
+}
+
+.cards-Container .card picture {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    #cd4dcc,
+    #c540d2,
+    #ba33d9,
+    #ad26e1,
+    #9c19e9,
+    #8d13e3,
+    #7e0ddd,
+    #6e07d7,
+    #6204c1,
+    #5702ab,
+    #4b0196,
+    #400082
+  );
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.cards-Container .card img {
+  width: 300px;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+}
+
+.cards-Container .card .content {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  padding-right: 2rem;
+  gap: 0.5rem;
+}
+
+.cards-Container .card .content > :nth-child(1) {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Letter Sketch", sans-serif;
+}
+
+.cards-Container .card .content > :nth-child(2) {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.cards-Container .card .content > :nth-child(4) {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: white;
+}
